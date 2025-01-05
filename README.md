@@ -93,5 +93,4 @@ OpenRMF, detaylı dokümantasyonu ve kullanıcı dostu yapısı sayesinde, hem y
 ### OpenRMF’yi indirmek ve kurulumunu gerçekleştirmek için aşağıdaki bağlantıda yer alan GitHub reposundaki talimatları takip etmeniz gerekmektedir:
 https://github.com/open-rmf/rmf
 
-Bu bağlantıda, OpenRMF’nin nasıl indirileceği, gerekli bağımlılıkların nasıl yükleneceği ve çalıştırılacağı adım adım açıklanmaktadır. Lütfen rehberi dikkatlice takip ederek kurulumu tamamlayınız.
-
+Bu bağlantıda, OpenRMF’nin nasıl indirileceği, gerekli bağımlılıkların nasıl yükleneceği ve çalıştırılacağı adım adım açıklanmaktadır. Burdaki önemli husus kullanmış olduğunuz ROS sürümünü seçmeniz ve sürüme ait kurulum adımlarını takip etmeniz.
