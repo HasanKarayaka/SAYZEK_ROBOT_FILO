@@ -57,4 +57,37 @@ ros2 run demo_nodes_cpp talker  # Başka bir terminalde çalıştırılacak list
 ros2 run demo_nodes_py listener
 
 
+OpenRMF (Open Robotics Middleware Framework) Nedir ve Neden Tercih Edilir?
+OpenRMF, robot filo sistemlerini yönetmek için geliştirilmiş bir yazılım altyapısıdır. Özellikle birden fazla robotun bir arada çalıştığı sistemlerde, farklı markalardaki veya türlerdeki robotların uyumlu bir şekilde iş birliği yapmasını sağlar. Aşağıda, OpenRMF’nin neden tercih edildiği detaylı bir şekilde açıklanmıştır:
+
+1. Farklı Robot Sistemlerini Destekler
+OpenRMF, farklı üreticilere veya teknolojilere ait robotların bir arada çalışabilmesini sağlar. Bu, karmaşık ve çeşitlilik içeren robot filoları için büyük bir avantajdır.
+
+2. Görev Yönetimi ve Planlama
+OpenRMF, robotlara görevleri dinamik olarak atayabilir ve bu görevleri önceliklendirebilir. Bu sayede robotların verimli çalışması sağlanır ve zaman kaybı en aza indirilir.
+
+3. Modüler ve Esnek Tasarım
+Sistem modüler bir yapıya sahiptir ve kolayca özelleştirilebilir. Kullanıcılar, ihtiyaçlarına göre yeni özellikler ekleyerek sistemi geliştirebilir.
+
+4. ROS 2 Entegrasyonu
+OpenRMF, robot teknolojilerinde yaygın olarak kullanılan ROS 2 (Robot Operating System 2) üzerine inşa edilmiştir. Bu sayede gerçek zamanlı iletişim, güvenlik ve yüksek performans sunar.
+
+5. Simülasyon ve Test İmkânı
+Sistemi gerçek ortamda kullanmadan önce, Gazebo gibi simülasyon araçları ile test etmek mümkündür. Bu, maliyetleri düşürürken aynı zamanda geliştirme sürecinde güvenilirliği artırır.
+
+6. Açık Kaynak ve Topluluk Desteği
+OpenRMF, açık kaynaklı bir projedir. Bu, kullanıcıların projeyi ücretsiz olarak kullanabilmesini ve geliştirebilmesini sağlar. Ayrıca dünya çapında geniş bir kullanıcı topluluğundan destek alınabilir.
+
+7. Altyapı ve Kaynak Yönetimi
+OpenRMF, robotların haritalama, asansör kontrolü, kapı erişimi gibi altyapı elemanlarıyla iletişim kurmasını sağlar. Aynı zamanda tüm bu kaynakları merkezi bir şekilde yönetme imkânı sunar.
+
+8. Engel Algılama ve Güvenlik
+Sistem, gerçek zamanlı olarak engelleri algılayabilir ve robotların rotasını otomatik olarak yeniden planlayarak güvenli bir çalışma ortamı oluşturur.
+
+9. Karmaşık Alan Yönetimi
+Depolar, fabrikalar veya çok katmanlı binalar gibi karmaşık alanların yönetimini kolaylaştırır. Robotlar, bu alanlar içinde etkin bir şekilde hareket edebilir ve görevlerini tamamlayabilir.
+
+10. Kapsamlı Dokümantasyon ve Kolay Kullanım
+OpenRMF, detaylı dokümantasyonu ve kullanıcı dostu yapısı sayesinde, hem yeni başlayanlar hem de deneyimli kullanıcılar için kolay bir deneyim sunar.
+
 
