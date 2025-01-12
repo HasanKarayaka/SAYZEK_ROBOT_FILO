@@ -61,8 +61,11 @@ ros2 run demo_nodes_py listener
 
 ### Open RMF'nin Temel Özellikleri
 Çoklu Robot Koordinasyonu: Farklı üreticilerin robotlarını aynı ortamda çakışmadan çalıştırır.
+
 Görev Yönetimi: Robotların görev dağılımını ve optimizasyonunu sağlar (örn. teslimat, temizlik görevleri).
+
 Ortak Altyapı Kullanımı: Asansörler, kapılar veya şarj istasyonları gibi altyapı unsurlarının robotlar tarafından paylaşılmasını koordine eder.
+
 Simülasyon ve Test: Çeşitli robotların aynı senaryoda çalışmasını simüle ederek test eder.
 
 ### Kullanım Alanları
