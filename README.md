@@ -133,7 +133,7 @@ https://github.com/ros-navigation/navigation2.git
 
 ## Multiple turtlebot3 usage
 
-Gazebo ortamında filo simülasyonu gerçekleştirmek için birden fazla mobil robot kullanımı gereklidir. Bu amaç doğrultusunda, TurtleBot3 robotları tercih edilmekte olup, söz konusu robotların kullanımını sağlayan birden fazla robotlu simülasyonlar için arshadlab/turtlebot3_multi_robot adlı GitHub deposu örnek teşkil etmektedir.
+Gazebo ortamında filo simülasyonu gerçekleştirmek için birden fazla mobil robot kullanımı gereklidir. Bu amaç doğrultusunda, TurtleBot3 robotları tercih edilmekte olup, söz konusu robotların kullanımını sağlayan birden fazla robotlu simülasyonlar için https://github.com/arshadlab/turtlebot3_multi_robot GitHub deposu örnek teşkil etmektedir.
 
 Bu depoda, birden fazla TurtleBot3 robotunu simüle etmek için gerekli yapılandırma ve kodlar sunulmaktadır. Projede, birden fazla robotun başlatılması ve yönetilmesi, özellikle launch dosyalarının özelleştirilmesi ile mümkün kılınmaktadır.
 
