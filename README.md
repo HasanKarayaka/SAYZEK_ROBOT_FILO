@@ -128,3 +128,17 @@ Nav2, modüler yapısı ve ROS 2'nin avantajları sayesinde robotların çevresi
 
 ### NAV2' nin Github repositoriesi adresteki linktedir,  ros sürümünüze göre uygun olan kurulum talimatlarını takip ederek kurabilirsiniz.
 https://github.com/ros-navigation/navigation2.git
+
+
+
+## Multiple turtlebot3 usage
+
+Gazebo ortamında filo simülasyonu gerçekleştirmek için birden fazla mobil robot kullanımı gereklidir. Bu amaç doğrultusunda, TurtleBot3 robotları tercih edilmekte olup, söz konusu robotların kullanımını sağlayan birden fazla robotlu simülasyonlar için arshadlab/turtlebot3_multi_robot adlı GitHub deposu örnek teşkil etmektedir.
+
+Bu depoda, birden fazla TurtleBot3 robotunu simüle etmek için gerekli yapılandırma ve kodlar sunulmaktadır. Projede, birden fazla robotun başlatılması ve yönetilmesi, özellikle launch dosyalarının özelleştirilmesi ile mümkün kılınmaktadır.
+
+### Temel Amaç
+Projenin temel hedefi, var olan launch dosyasını ihtiyaçlara göre düzenleyerek istenilen sayıda TurtleBot3 robotunun simülasyon ortamında başlatılmasını sağlamaktır. Bu süreçte, robotların isimlendirilmesi, farklı namespace tanımları yapılması ve Gazebo ortamında çakışma olmaksızın tüm robotların düzgün bir şekilde entegre edilmesi gereklidir.
+
+### Sonuç
+Bu yöntem, çok robotlu sistemlerin koordinasyonu, filo yönetimi algoritmalarının geliştirilmesi ve çeşitli otonom navigasyon uygulamalarının test edilmesi gibi çalışmalar için güçlü bir altyapı sunmaktadır. Projenin akademik ve endüstriyel araştırmalarda geniş bir kullanım alanı bulunmaktadır.
