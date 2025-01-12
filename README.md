@@ -122,14 +122,20 @@ ROS 2'nin Nav2 (Navigation2) paketi, mobil robotların otonom bir şekilde belir
 
 ### Nav2'nin Temel Görevleri
 Haritalama ve Yerelleştirme: Robot, çevresini haritalandırır ve harita üzerinde kendi konumunu belirler. (Örn: SLAM ve Monte Carlo Localization)
+
 Yol Planlama: Robot, engelleri aşarak hedefe en uygun yolu belirler. (Global: A*; Yerel: Dynamic Window Approach)
+
 Hareket Kontrolü: Robotun hız ve yönünü kontrol ederek planlanan yolu takip etmesini sağlar.
+
 Engelden Kaçınma: Statik ve dinamik engelleri algılayarak çarpışmaları önler.
 
 ### Kullanım Alanları
 Otonom Robotlar: Depo robotları, hizmet robotları.
+
 Araştırma ve Eğitim: Algoritma geliştirme.
+
 Savunma: Tehlikeli bölgelerde keşif.
+
 Nav2, modüler yapısı ve ROS 2'nin avantajları sayesinde robotların çevresinde güvenli ve etkili bir şekilde hareket etmesine olanak tanır.
 
 ### NAV2' nin Github repositoriesi adresteki linktedir,  ros sürümünüze göre uygun olan kurulum talimatlarını takip ederek kurabilirsiniz.
