@@ -36,7 +36,7 @@ locale  # verify settings
 sudo apt install software-properties-common -y
 sudo add-apt-repository universe
 
-# ROS 2 Deposu ve Anahtarını Ekleyin
+### ROS 2 Deposu ve Anahtarını Ekleyin
 sudo apt update && sudo apt install curl -y
 sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
 
