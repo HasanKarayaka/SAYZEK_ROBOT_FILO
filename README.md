@@ -56,7 +56,7 @@ source /opt/ros/humble/setup.bash
 ros2 run demo_nodes_cpp talker  # Başka bir terminalde çalıştırılacak listener için bekleyin
 ros2 run demo_nodes_py listener
 
-### Open RMF
+## Open RMF
 (Open Robotics Middleware Framework), ROS 2 ekosisteminin bir parçası olarak geliştirilmiş açık kaynaklı bir çerçevedir. Amacı, çoklu robot sistemlerinin ve altyapının bir arada çalışmasını sağlamak, yani farklı türdeki robotların ve cihazların koordinasyonunu yönetmektir.
 
 ### Open RMF'nin Temel Özellikleri
@@ -110,7 +110,7 @@ https://github.com/open-rmf/rmf
 Bu bağlantıda, OpenRMF’nin nasıl indirileceği, gerekli bağımlılıkların nasıl yükleneceği ve çalıştırılacağı adım adım açıklanmaktadır. Burdaki önemli husus kullanmış olduğunuz ROS sürümünü seçmeniz ve sürüme ait kurulum adımlarını takip etmeniz.
 
 
-### Nav2
+## Nav2
 ROS 2'nin Nav2 (Navigation2) paketi, mobil robotların otonom bir şekilde belirli bir başlangıç noktasından hedefe ulaşmasını sağlamak için kullanılır. Bu paket, robotun çevresel algılama, hedef planlama ve hareket kontrolü gibi temel navigasyon görevlerini yerine getirir.
 
 
