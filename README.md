@@ -94,3 +94,20 @@ OpenRMF, detaylı dokümantasyonu ve kullanıcı dostu yapısı sayesinde, hem y
 https://github.com/open-rmf/rmf
 
 Bu bağlantıda, OpenRMF’nin nasıl indirileceği, gerekli bağımlılıkların nasıl yükleneceği ve çalıştırılacağı adım adım açıklanmaktadır. Burdaki önemli husus kullanmış olduğunuz ROS sürümünü seçmeniz ve sürüme ait kurulum adımlarını takip etmeniz.
+
+
+
+### ROS 2'nin Nav2 (Navigation2) paketi, mobil robotların otonom bir şekilde belirli bir başlangıç noktasından hedefe ulaşmasını sağlamak için kullanılır. Bu paket, robotun çevresel algılama, hedef planlama ve hareket kontrolü gibi temel navigasyon görevlerini yerine getirir.
+
+
+### Nav2'nin Temel Görevleri
+Haritalama ve Yerelleştirme: Robot, çevresini haritalandırır ve harita üzerinde kendi konumunu belirler. (Örn: SLAM ve Monte Carlo Localization)
+Yol Planlama: Robot, engelleri aşarak hedefe en uygun yolu belirler. (Global: A*; Yerel: Dynamic Window Approach)
+Hareket Kontrolü: Robotun hız ve yönünü kontrol ederek planlanan yolu takip etmesini sağlar.
+Engelden Kaçınma: Statik ve dinamik engelleri algılayarak çarpışmaları önler.
+
+### Kullanım Alanları
+Otonom Robotlar: Depo robotları, hizmet robotları.
+Araştırma ve Eğitim: Algoritma geliştirme.
+Savunma: Tehlikeli bölgelerde keşif.
+Nav2, modüler yapısı ve ROS 2'nin avantajları sayesinde robotların çevresinde güvenli ve etkili bir şekilde hareket etmesine olanak tanır.
