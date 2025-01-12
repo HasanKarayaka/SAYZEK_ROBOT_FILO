@@ -56,6 +56,20 @@ source /opt/ros/humble/setup.bash
 ros2 run demo_nodes_cpp talker  # Başka bir terminalde çalıştırılacak listener için bekleyin
 ros2 run demo_nodes_py listener
 
+### Open RMF
+(Open Robotics Middleware Framework), ROS 2 ekosisteminin bir parçası olarak geliştirilmiş açık kaynaklı bir çerçevedir. Amacı, çoklu robot sistemlerinin ve altyapının bir arada çalışmasını sağlamak, yani farklı türdeki robotların ve cihazların koordinasyonunu yönetmektir.
+
+### Open RMF'nin Temel Özellikleri
+Çoklu Robot Koordinasyonu: Farklı üreticilerin robotlarını aynı ortamda çakışmadan çalıştırır.
+Görev Yönetimi: Robotların görev dağılımını ve optimizasyonunu sağlar (örn. teslimat, temizlik görevleri).
+Ortak Altyapı Kullanımı: Asansörler, kapılar veya şarj istasyonları gibi altyapı unsurlarının robotlar tarafından paylaşılmasını koordine eder.
+Simülasyon ve Test: Çeşitli robotların aynı senaryoda çalışmasını simüle ederek test eder.
+
+### Kullanım Alanları
+Endüstriyel Otomasyon: Depo ve lojistikte farklı robotların bir arada çalışması.
+Akıllı Binalar: Robotların bina altyapısını ortak kullanımı (örn. asansör entegrasyonu).
+Hizmet Robotları: Çok robotlu sistemlerin koordinasyonu (örn. oteller, hastaneler).
+Open RMF, farklı robot sistemlerini ve altyapıyı kolayca entegre ederek karmaşık ortamlarda verimli ve organize bir çalışma ortamı sunar.
 
 ### OpenRMF (Open Robotics Middleware Framework) Nedir ve Neden Tercih Edilir?
 OpenRMF, robot filo sistemlerini yönetmek için geliştirilmiş bir yazılım altyapısıdır. Özellikle birden fazla robotun bir arada çalıştığı sistemlerde, farklı markalardaki veya türlerdeki robotların uyumlu bir şekilde iş birliği yapmasını sağlar. Aşağıda, OpenRMF’nin neden tercih edildiği detaylı bir şekilde açıklanmıştır:
@@ -96,8 +110,8 @@ https://github.com/open-rmf/rmf
 Bu bağlantıda, OpenRMF’nin nasıl indirileceği, gerekli bağımlılıkların nasıl yükleneceği ve çalıştırılacağı adım adım açıklanmaktadır. Burdaki önemli husus kullanmış olduğunuz ROS sürümünü seçmeniz ve sürüme ait kurulum adımlarını takip etmeniz.
 
 
-
-### ROS 2'nin Nav2 (Navigation2) paketi, mobil robotların otonom bir şekilde belirli bir başlangıç noktasından hedefe ulaşmasını sağlamak için kullanılır. Bu paket, robotun çevresel algılama, hedef planlama ve hareket kontrolü gibi temel navigasyon görevlerini yerine getirir.
+### Nav2
+ROS 2'nin Nav2 (Navigation2) paketi, mobil robotların otonom bir şekilde belirli bir başlangıç noktasından hedefe ulaşmasını sağlamak için kullanılır. Bu paket, robotun çevresel algılama, hedef planlama ve hareket kontrolü gibi temel navigasyon görevlerini yerine getirir.
 
 
 ### Nav2'nin Temel Görevleri
@@ -111,3 +125,6 @@ Otonom Robotlar: Depo robotları, hizmet robotları.
 Araştırma ve Eğitim: Algoritma geliştirme.
 Savunma: Tehlikeli bölgelerde keşif.
 Nav2, modüler yapısı ve ROS 2'nin avantajları sayesinde robotların çevresinde güvenli ve etkili bir şekilde hareket etmesine olanak tanır.
+
+### NAV2' nin Github repositoriesi adresteki linktedir,  ros sürümünüze göre uygun olan kurulum talimatlarını takip ederek kurabilirsiniz.
+https://github.com/ros-navigation/navigation2.git
