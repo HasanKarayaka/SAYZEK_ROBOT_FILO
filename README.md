@@ -70,8 +70,11 @@ Simülasyon ve Test: Çeşitli robotların aynı senaryoda çalışmasını sim�
 
 ### Kullanım Alanları
 Endüstriyel Otomasyon: Depo ve lojistikte farklı robotların bir arada çalışması.
+
 Akıllı Binalar: Robotların bina altyapısını ortak kullanımı (örn. asansör entegrasyonu).
+
 Hizmet Robotları: Çok robotlu sistemlerin koordinasyonu (örn. oteller, hastaneler).
+
 Open RMF, farklı robot sistemlerini ve altyapıyı kolayca entegre ederek karmaşık ortamlarda verimli ve organize bir çalışma ortamı sunar.
 
 ### OpenRMF (Open Robotics Middleware Framework) Nedir ve Neden Tercih Edilir?
