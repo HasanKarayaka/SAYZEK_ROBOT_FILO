@@ -199,10 +199,15 @@ source ~/.bashrc
 ![model_insert](https://github.com/user-attachments/assets/952f5d91-11a7-4005-a7fd-3e0d48afcb93)
 
 ### herşeyi kapatın ve terminale sırayla
+
 cd turtlebot3_ws/
+
 source install/setup.bash 
+
 export TURTLEBOT3_MODEL=burger
+
 ros2 launch turtlebot3_gazebo empty_world.launch.py
+
 ### turtlebot3  robotunuz boş haritada geldiyse insert kısmından haritanızı ekleyebilirsiniz.
 ### 2. termianl açınız ve 
 cd turtlebot3_ws/
