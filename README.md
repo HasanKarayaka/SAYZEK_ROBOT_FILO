@@ -155,20 +155,20 @@ Projenin temel hedefi, var olan launch dosyasını ihtiyaçlara göre düzenleye
 ### Sonuç
 Bu yöntem, çok robotlu sistemlerin koordinasyonu, filo yönetimi algoritmalarının geliştirilmesi ve çeşitli otonom navigasyon uygulamalarının test edilmesi gibi çalışmalar için güçlü bir altyapı sunmaktadır. Projenin akademik ve endüstriyel araştırmalarda geniş bir kullanım alanı bulunmaktadır.
 
-#UYGULAMA
+# UYGULAMA
 
-###Install Gazebo
+### Install Gazebo
 sudo apt install ros-humble-gazebo-*
 
-###Install Cartographer
+### Install Cartographer
 sudo apt install ros-humble-cartographer
 sudo apt install ros-humble-cartographer-ros
 
-###Install Navigation2
+### Install Navigation2
 sudo apt install ros-humble-navigation2
 sudo apt install ros-humble-nav2-bringup
 
-###Install the required TurtleBot3 Packages.
+### Install the required TurtleBot3 Packages.
 mkdir -p ~/turtlebot3_ws/src
 cd ~/turtlebot3_ws/src/
 git clone -b humble https://github.com/ROBOTIS-GIT/DynamixelSDK.git
@@ -180,16 +180,16 @@ colcon build --symlink-install
 echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
 source ~/.bashrc
 
-###Setup your ROS environment for the Remote PC.
+### Setup your ROS environment for the Remote PC.
 echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
 echo 'source /usr/share/gazebo/setup.sh' >> ~/.bashrc
 source ~/.bashrc
 
-###paketleri başarılı bir şekilde kurduktan sonra gazebo ortamında simülasyon için haritamızı oluşturuyoruz.
+### paketleri başarılı bir şekilde kurduktan sonra gazebo ortamında simülasyon için haritamızı oluşturuyoruz.
 ### gazebo uygulamasını çatığımızda sol üste build editör kısmından kendi haritamızı oluşturabiliriz.
 ![gazebo_build_editor](https://github.com/user-attachments/assets/e8f8d882-7dab-4121-94e1-f404a489ae73)
 
-###ctrl+s ile haritamızı kaydetmeliyiz.
+### ctrl+s ile haritamızı kaydetmeliyiz.
 
 ![model_ctrl_s](https://github.com/user-attachments/assets/ea43a488-f740-472a-b224-335e2d004860)
 
@@ -230,7 +230,7 @@ source install/setup.bash
 export TURTLEBOT3_MODEL=burger
 ros2 launch turtlebot3_gazebo empty_world.launch.py
 
-###2. terminal
+### 2. terminal
 export TURTLEBOT3_MODEL=burger
 ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True map:=$HOME/map.yaml
 
