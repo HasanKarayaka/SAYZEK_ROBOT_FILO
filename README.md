@@ -156,7 +156,7 @@ Projenin temel hedefi, var olan launch dosyasını ihtiyaçlara göre düzenleye
 Bu yöntem, çok robotlu sistemlerin koordinasyonu, filo yönetimi algoritmalarının geliştirilmesi ve çeşitli otonom navigasyon uygulamalarının test edilmesi gibi çalışmalar için güçlü bir altyapı sunmaktadır. Projenin akademik ve endüstriyel araştırmalarda geniş bir kullanım alanı bulunmaktadır.
 
 # UYGULAMA
-
+### Terminal Ekranına Sırayla
 ### Install Gazebo
 sudo apt install ros-humble-gazebo-*
 
