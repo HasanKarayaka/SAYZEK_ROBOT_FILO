@@ -234,7 +234,8 @@ ros2 launch turtlebot3_gazebo empty_world.launch.py
 export TURTLEBOT3_MODEL=burger
 ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True map:=$HOME/map.yaml
 
-![Screenshot from 2025-01-28 22-08-56](https://github.com/user-attachments/assets/2a08833d-4998-41cb-8196-875bae407152)
+![nav2](https://github.com/user-attachments/assets/74336632-95d0-4320-8d75-b7dd25ff5ee1)
+
 
 ### haritanın neresindeyse robot orasına Pose Estimation ataması yapmalısın robotun yönü buradakı ok yönü ile aynı olması gerekmektedir.
 ![Screenshot from 2025-01-29 21-07-54](https://github.com/user-attachments/assets/170a8e3b-cc9a-4554-9434-f028fd46702f)
