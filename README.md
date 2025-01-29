@@ -154,3 +154,39 @@ Projenin temel hedefi, var olan launch dosyasını ihtiyaçlara göre düzenleye
 
 ### Sonuç
 Bu yöntem, çok robotlu sistemlerin koordinasyonu, filo yönetimi algoritmalarının geliştirilmesi ve çeşitli otonom navigasyon uygulamalarının test edilmesi gibi çalışmalar için güçlü bir altyapı sunmaktadır. Projenin akademik ve endüstriyel araştırmalarda geniş bir kullanım alanı bulunmaktadır.
+
+#UYGULAMA
+
+###Install Gazebo
+sudo apt install ros-humble-gazebo-*
+
+###Install Cartographer
+sudo apt install ros-humble-cartographer
+sudo apt install ros-humble-cartographer-ros
+
+###Install Navigation2
+sudo apt install ros-humble-navigation2
+sudo apt install ros-humble-nav2-bringup
+
+###Install the required TurtleBot3 Packages.
+$ mkdir -p ~/turtlebot3_ws/src
+$ cd ~/turtlebot3_ws/src/
+$ git clone -b humble https://github.com/ROBOTIS-GIT/DynamixelSDK.git
+$ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+$ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3.git
+$ sudo apt install python3-colcon-common-extensions
+$ cd ~/turtlebot3_ws
+$ colcon build --symlink-install
+$ echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
+$ source ~/.bashrc
+
+###Setup your ROS environment for the Remote PC.
+$ echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
+$ echo 'source /usr/share/gazebo/setup.sh' >> ~/.bashrc
+$ source ~/.bashrc
+
+###paketleri başarılı bir şekilde kurduktan sonra gazebo ortamında simülasyon için haritamızı oluşturuyoruz.
+![gazebo_build_editor](https://github.com/user-attachments/assets/e8f8d882-7dab-4121-94e1-f404a489ae73)
+
+
+
