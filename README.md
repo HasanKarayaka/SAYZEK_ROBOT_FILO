@@ -169,24 +169,81 @@ sudo apt install ros-humble-navigation2
 sudo apt install ros-humble-nav2-bringup
 
 ###Install the required TurtleBot3 Packages.
-$ mkdir -p ~/turtlebot3_ws/src
-$ cd ~/turtlebot3_ws/src/
-$ git clone -b humble https://github.com/ROBOTIS-GIT/DynamixelSDK.git
-$ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
-$ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3.git
-$ sudo apt install python3-colcon-common-extensions
-$ cd ~/turtlebot3_ws
-$ colcon build --symlink-install
-$ echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
-$ source ~/.bashrc
+mkdir -p ~/turtlebot3_ws/src
+cd ~/turtlebot3_ws/src/
+git clone -b humble https://github.com/ROBOTIS-GIT/DynamixelSDK.git
+git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3.git
+sudo apt install python3-colcon-common-extensions
+cd ~/turtlebot3_ws
+colcon build --symlink-install
+echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
+source ~/.bashrc
 
 ###Setup your ROS environment for the Remote PC.
-$ echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
-$ echo 'source /usr/share/gazebo/setup.sh' >> ~/.bashrc
-$ source ~/.bashrc
+echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
+echo 'source /usr/share/gazebo/setup.sh' >> ~/.bashrc
+source ~/.bashrc
 
 ###paketleri başarılı bir şekilde kurduktan sonra gazebo ortamında simülasyon için haritamızı oluşturuyoruz.
+### gazebo uygulamasını çatığımızda sol üste build editör kısmından kendi haritamızı oluşturabiliriz.
 ![gazebo_build_editor](https://github.com/user-attachments/assets/e8f8d882-7dab-4121-94e1-f404a489ae73)
+
+###ctrl+s ile haritamızı kaydetmeliyiz.
+
+![model_ctrl_s](https://github.com/user-attachments/assets/ea43a488-f740-472a-b224-335e2d004860)
+
+### haritayı kaydettikten sonra editör kısmından çıkış yapmalıyız, sol üsteki sekmeden çıkış yapabilirsiniz.
+### çizmiş olduğumuz haritayı insert kısmından hangi isim ile kaydetmişseniz o ismli uzantıdan ekleyebilirsiniz.
+
+![model_insert](https://github.com/user-attachments/assets/952f5d91-11a7-4005-a7fd-3e0d48afcb93)
+
+### herşeyi kapatın ve terminale sırayla
+cd turtlebot3_ws/
+source install/setup.bash 
+export TURTLEBOT3_MODEL=burger
+ros2 launch turtlebot3_gazebo empty_world.launch.py
+### turtlebot3  robotunuz boş haritada geldiyse insert kısmından haritanızı ekleyebilirsiniz.
+### 2. termianl açınız ve 
+cd turtlebot3_ws/
+source install/setup.bash 
+ros2 run turtlebot3_teleop teleop_keyboard
+### komutu ile robotu haraket ettirebilirsiniz.
+### 3. bir termianl açın ve şu komutları giriniz
+cd turtlebot3_ws/
+source install/setup.bash 
+export TURTLEBOT3_MODEL=burger
+ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
+
+### artık rviz açılmış olması lazım ve haritanın lidar tarafından algılanan yerlerini görüyor olmanız gerekiyor.
+
+![nav2](https://github.com/user-attachments/assets/aeb22b7b-6c78-4753-8bde-075346bcc75e)
+
+### tüm haritayı tarattıktan sonra artık map'i kaydetmeliyiz.
+ros2 run nav2_map_server map_saver_cli -f ~/map
+
+### bu kodu 4. termianlde çalıştırın, terminalın bulunduğu konuma resmi kaydedecektir buna dikkat ediniz.
+### artık nav2 paketini kullanmaya hazırız tüm terminalleri kapatabilirsiniz.
+### şimdi tekrar 1. termianl
+cd turtlebot3_ws/
+source install/setup.bash 
+export TURTLEBOT3_MODEL=burger
+ros2 launch turtlebot3_gazebo empty_world.launch.py
+
+###2. terminal
+export TURTLEBOT3_MODEL=burger
+ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True map:=$HOME/map.yaml
+
+![Screenshot from 2025-01-28 22-08-56](https://github.com/user-attachments/assets/2a08833d-4998-41cb-8196-875bae407152)
+
+### haritanın neresindeyse robot orasına Pose Estimation ataması yapmalısın robotun yönü buradakı ok yönü ile aynı olması gerekmektedir.
+![Screenshot from 2025-01-29 21-07-54](https://github.com/user-attachments/assets/170a8e3b-cc9a-4554-9434-f028fd46702f)
+
+### robotun yönünü belirledikten sonra artık robotun nereye gitmesini istiyorsanız oraya nav2 goal atamalısınız
+
+![nav2_gitmesi](https://github.com/user-attachments/assets/ca358b5a-0905-485b-ac6b-7a90e281a004)
+
+
 
 
 
