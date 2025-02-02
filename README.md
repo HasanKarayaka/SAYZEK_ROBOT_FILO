@@ -240,6 +240,15 @@ export TURTLEBOT3_MODEL=burger
 
 ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
 
+yeni bir termianl açın ve 
+
+cd turtlebot3_ws/
+
+source install/setup.bash 
+
+ros2 run turtlebot3_teleop teleop_keyboard
+" klavye ile robotunuzu gezdirin tüm haritayı taradıktan sonra rvizde haritayı görebilirsiniz"
+
 ### artık rviz açılmış olması lazım ve haritanın lidar tarafından algılanan yerlerini görüyor olmanız gerekiyor.
 
 ![nav2](https://github.com/user-attachments/assets/aeb22b7b-6c78-4753-8bde-075346bcc75e)
