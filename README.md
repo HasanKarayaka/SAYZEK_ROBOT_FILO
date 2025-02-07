@@ -211,7 +211,7 @@ source ~/.bashrc
 
 ![model_insert](https://github.com/user-attachments/assets/952f5d91-11a7-4005-a7fd-3e0d48afcb93)
 
-### herşeyi kapatın ve terminale sırayla
+### 1 herşeyi kapatın ve terminale sırayla
 
 cd turtlebot3_ws/
 
@@ -240,13 +240,6 @@ export TURTLEBOT3_MODEL=burger
 
 ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
 
-yeni bir termianl açın ve 
-
-cd turtlebot3_ws/
-
-source install/setup.bash 
-
-ros2 run turtlebot3_teleop teleop_keyboard
 " klavye ile robotunuzu gezdirin tüm haritayı taradıktan sonra rvizde haritayı görebilirsiniz"
 
 ### artık rviz açılmış olması lazım ve haritanın lidar tarafından algılanan yerlerini görüyor olmanız gerekiyor.
@@ -282,6 +275,14 @@ ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True map:
 ### robotun yönünü belirledikten sonra artık robotun nereye gitmesini istiyorsanız oraya nav2 goal atamalısınız
 
 ![nav2_gitmesi](https://github.com/user-attachments/assets/ca358b5a-0905-485b-ac6b-7a90e281a004)
+
+### traffic-editor uygulamasını indiriyoruz ve https://www.youtube.com/watch?v=V-pzesxVJoA eğitim videosuna göre oluşturduğumuz haritayı uygulamada açıyoruz
+haritayı png formatına açabilirsiniz ros2 ile kaydettiğiniz mapin formatı png formatında olmayabilir!
+
+haritayı açtıktan sonra video eğitim ile haritanızın trafik yönetimi oluşturun
+
+haritayı kaydettikten sonra .buildin.yaml dosyanın içerisinde png nin konumuna dikkat edin yaml ile aynı konumda olması gerkiyor
+
 
 
 
