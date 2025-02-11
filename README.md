@@ -284,6 +284,56 @@ haritayı açtıktan sonra video eğitim ile haritanızın trafik yönetimi olu�
 haritayı kaydettikten sonra .buildin.yaml dosyanın içerisinde png nin konumuna dikkat edin yaml ile aynı konumda olması gerkiyor
 
 
+### FREE_FLEET Kurulumu...
+https://github.com/open-rmf/free_fleet/tree/legacy?tab=readme-ov-file
+
+linketi adreste kurulum adımları yazmaktadır.
+
+ros2 humble için kurulum yapıcaksanız dikkat etmeniz gerekenler;
+
+git clone https://github.com/open-rmf/free_fleet -b legacy
+ 
+git clone https://github.com/open-rmf/rmf_internal_msgs -b humble
+
+burdaki iki kodu şu şekilde yazmanı gerekmtedir.
+
+rosdep install --from-paths src --ignore-src --rosdistro humble -yr
+
+bu komutu çalıştırdığınızda eğer ros1 ile ilgili hatalar alıyorsanız, ros1 ile ilgili klasörleri silebilir ve tekrar deneyebilirsiniz veya kurulum esnasında gösterlien şu adımı uygulayabilirsiniz
+
+# Optionally use the command below to only build the relevant packages, başlığı altındaki kodu uygulayabilirsiniz.
+
+Derleme ve kurulum başarılı olduktan sonra;
+
+export TURTLEBOT3_MODEL=burger; ros2 launch ff_examples_ros2 turtlebot3_world_ff.launch.xml
+
+gazebo ve rviz dünyasını başlatıyoruz.
+
+ros2 launch ff_examples_ros2 turtlebot3_world_ff_server.launch.xml
+
+görevlerin robota iletileceği bir server oluşturuyoruz
+
+![Screenshot from 2025-02-11 21-18-40](https://github.com/user-attachments/assets/1315ced0-3aba-43bb-85e0-a3d43f16c7ba)
+new robot: [ros2_tb3_0]  / fleet name: turtlebot3
+
+robotun isim tanımlamalarını görev vermek için kullancağız bu yüzden burdaki tanımları bilmeniz gerekiyor
+
+3. terminalde görev vermeye artık hazırız
+
+ros2 run ff_examples_ros2 send_destination_request.py -f turtlebot3 -r ros2_tb3_0 -x 1.725 -y -0.39 --yaw 0.0 -i deneme
+
+kodu dikatli incelediğinizde new robot ile fleet name isimlendirmelerinin nasıl atandığını fark ediyorsunnuz, deneme yazan yer kefi olarak yazılabilir. 
+Artık bu komutu da çalıştırdığınızda robotun rviz ve gazeboda istediğiniz konuma otonom haraketini izleyebilirsiniz.
+![Screenshot from 2025-02-11 21-22-11](https://github.com/user-attachments/assets/cba85741-0afc-446c-a726-2c004ba01fe1)
+
+
+
+
+
+
+
+
+
 
 
 
