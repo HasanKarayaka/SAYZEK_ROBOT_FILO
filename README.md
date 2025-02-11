@@ -158,45 +158,33 @@ Bu yöntem, çok robotlu sistemlerin koordinasyonu, filo yönetimi algoritmalar�
 # UYGULAMA
 ### Terminal Ekranına Sırayla
 ### Install Gazebo
-sudo apt install ros-humble-gazebo-*
+- sudo apt install ros-humble-gazebo-*
 
 ### Install Cartographer
-sudo apt install ros-humble-cartographer
-
-sudo apt install ros-humble-cartographer-ros
+- sudo apt install ros-humble-cartographer
+- sudo apt install ros-humble-cartographer-ros
 
 ### Install Navigation2
-sudo apt install ros-humble-navigation2
-
-sudo apt install ros-humble-nav2-bringup
+- sudo apt install ros-humble-navigation2
+- sudo apt install ros-humble-nav2-bringup
 
 ### Install the required TurtleBot3 Packages.
-mkdir -p ~/turtlebot3_ws/src
+- mkdir -p ~/turtlebot3_ws/src
+- cd ~/turtlebot3_ws/src/
+- git clone -b humble https://github.com/ROBOTIS-GIT/DynamixelSDK.git
+- git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+- git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3.git
+- sudo apt install python3-colcon-common-extensions
 
-cd ~/turtlebot3_ws/src/
-
-git clone -b humble https://github.com/ROBOTIS-GIT/DynamixelSDK.git
-
-git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
-
-git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3.git
-
-sudo apt install python3-colcon-common-extensions
-
-cd ~/turtlebot3_ws
-
-colcon build --symlink-install
-
-echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
-
-source ~/.bashrc
+- cd ~/turtlebot3_ws
+- colcon build --symlink-install
+- echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
+- source ~/.bashrc
 
 ### Setup your ROS environment for the Remote PC.
-echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
-
-echo 'source /usr/share/gazebo/setup.sh' >> ~/.bashrc
-
-source ~/.bashrc
+- echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
+- echo 'source /usr/share/gazebo/setup.sh' >> ~/.bashrc
+- source ~/.bashrc
 
 ### paketleri başarılı bir şekilde kurduktan sonra gazebo ortamında simülasyon için haritamızı oluşturuyoruz.
 ### gazebo uygulamasını çatığımızda sol üste build editör kısmından kendi haritamızı oluşturabiliriz.
@@ -213,33 +201,24 @@ source ~/.bashrc
 
 ### 1 herşeyi kapatın ve terminale sırayla
 
-cd turtlebot3_ws/
-
-source install/setup.bash 
-
-export TURTLEBOT3_MODEL=burger
-
-ros2 launch turtlebot3_gazebo empty_world.launch.py
+- cd turtlebot3_ws/
+- source install/setup.bash 
+- export TURTLEBOT3_MODEL=burger
+- ros2 launch turtlebot3_gazebo empty_world.launch.py
 
 ### turtlebot3  robotunuz boş haritada geldiyse insert kısmından haritanızı ekleyebilirsiniz.
 ### 2. termianl açınız ve 
 
-cd turtlebot3_ws/
-
-source install/setup.bash 
-
-ros2 run turtlebot3_teleop teleop_keyboard
+- cd turtlebot3_ws/
+- source install/setup.bash 
+- ros2 run turtlebot3_teleop teleop_keyboard
 
 ### komutu ile robotu haraket ettirebilirsiniz.
 ### 3. bir termianl açın ve şu komutları giriniz
-cd turtlebot3_ws/
-
-source install/setup.bash 
-
-export TURTLEBOT3_MODEL=burger
-
-ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
-
+- cd turtlebot3_ws/
+- source install/setup.bash 
+- export TURTLEBOT3_MODEL=burger
+- ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
 " klavye ile robotunuzu gezdirin tüm haritayı taradıktan sonra rvizde haritayı görebilirsiniz"
 
 ### artık rviz açılmış olması lazım ve haritanın lidar tarafından algılanan yerlerini görüyor olmanız gerekiyor.
@@ -248,23 +227,19 @@ ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
 
 ### tüm haritayı tarattıktan sonra artık map'i kaydetmeliyiz.
 
-ros2 run nav2_map_server map_saver_cli -f ~/map
+- ros2 run nav2_map_server map_saver_cli -f ~/map
 
 ### bu kodu 4. termianlde çalıştırın, terminalın bulunduğu konuma resmi kaydedecektir buna dikkat ediniz.
 ### artık nav2 paketini kullanmaya hazırız tüm terminalleri kapatabilirsiniz.
 ### şimdi tekrar 1. termianl
-cd turtlebot3_ws/
-
-source install/setup.bash 
-
-export TURTLEBOT3_MODEL=burger
-
-ros2 launch turtlebot3_gazebo empty_world.launch.py
+- cd turtlebot3_ws/
+- source install/setup.bash 
+- export TURTLEBOT3_MODEL=burger
+- ros2 launch turtlebot3_gazebo empty_world.launch.py
 
 ### 2. terminal
-export TURTLEBOT3_MODEL=burger
-
-ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True map:=$HOME/map.yaml
+- export TURTLEBOT3_MODEL=burger
+- ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True map:=$HOME/map.yaml
 
 ![nav2](https://github.com/user-attachments/assets/74336632-95d0-4320-8d75-b7dd25ff5ee1)
 
