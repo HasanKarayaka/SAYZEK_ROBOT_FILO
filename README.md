@@ -284,7 +284,7 @@ haritayı açtıktan sonra video eğitim ile haritanızın trafik yönetimi olu�
 haritayı kaydettikten sonra .buildin.yaml dosyanın içerisinde png nin konumuna dikkat edin yaml ile aynı konumda olması gerkiyor
 
 
-### FREE_FLEET Kurulumu...
+# FREE_FLEET Kurulumu...
 https://github.com/open-rmf/free_fleet/tree/legacy?tab=readme-ov-file
 
 linketi adreste kurulum adımları yazmaktadır.
@@ -301,7 +301,7 @@ rosdep install --from-paths src --ignore-src --rosdistro humble -yr
 
 bu komutu çalıştırdığınızda eğer ros1 ile ilgili hatalar alıyorsanız, ros1 ile ilgili klasörleri silebilir ve tekrar deneyebilirsiniz veya kurulum esnasında gösterlien şu adımı uygulayabilirsiniz
 
-# Optionally use the command below to only build the relevant packages, başlığı altındaki kodu uygulayabilirsiniz.
+#### Optionally use the command below to only build the relevant packages, başlığı altındaki kodu uygulayabilirsiniz.
 
 Derleme ve kurulum başarılı olduktan sonra;
 
