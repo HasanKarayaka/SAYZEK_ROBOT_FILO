@@ -284,7 +284,40 @@ haritayı açtıktan sonra video eğitim ile haritanızın trafik yönetimi olu�
 haritayı kaydettikten sonra .buildin.yaml dosyanın içerisinde png nin konumuna dikkat edin yaml ile aynı konumda olması gerkiyor
 
 
-# FREE_FLEET Kurulumu...
+# Free Fleet 🚀
+
+## **Free Fleet Nedir?** 🔍  
+**Free Fleet**, **Open-RMF (Open Robotics Middleware Framework)** ekosistemi içinde bulunan açık kaynaklı bir filo yönetim sistemidir. Robot filolarını merkezi bir sistem üzerinden yönetmek, görevleri koordine etmek ve farklı üreticilere ait robotları birlikte çalıştırmak için kullanılır.  
+
+## **Free Fleet’in Temel Özellikleri** ✅  
+1. **Çoklu Robot Yönetimi** 🤖  
+   - Aynı anda birden fazla robotun görev almasını ve yönetilmesini sağlar.  
+
+2. **Bağımsız Robot Entegrasyonu** 🔄  
+   - Farklı üreticilere ait robotların tek bir çatı altında çalışmasını sağlar.  
+
+3. **Açık Kaynak ve Modüler Yapı** 🛠  
+   - Open-RMF’nin modüler mimarisine uygun şekilde geliştirilmiştir.  
+   - Kullanıcılar ihtiyaçlarına göre özelleştirebilir.  
+
+4. **REST API & ROS 2 Uyumluluğu** 🌐  
+   - Free Fleet, REST API ile uzaktan kontrol edilebilir.  
+   - ROS 2 desteklidir, böylece Open-RMF ile sorunsuz çalışır.  
+
+5. **Görev Yönetimi** 📌  
+   - Robotlara belirlenen görevleri dinamik olarak atayabilir.  
+   - Görev ilerlemelerini takip edebilir.  
+
+6. **Özel Protokoller ve Haberleşme** 📡  
+   - WebSocket, MQTT gibi haberleşme yöntemlerini destekleyebilir.  
+
+## **Çalışma Mantığı** ⚙  
+- Free Fleet, **robot istemcileri (robot clients)** ve **filo sunucusu (fleet server)** olmak üzere iki ana bileşenden oluşur.  
+- **Filo sunucusu**, Open-RMF ile bağlantılıdır ve robotlara görev atar.  
+- **Robot istemcileri**, filo sunucusundan gelen komutları alarak kendi iç motorlarına iletir.  
+
+
+
 https://github.com/open-rmf/free_fleet/tree/legacy?tab=readme-ov-file
 
 linketi adreste kurulum adımları yazmaktadır.
