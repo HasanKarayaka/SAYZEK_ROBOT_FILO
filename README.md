@@ -251,12 +251,47 @@ Bu yöntem, çok robotlu sistemlerin koordinasyonu, filo yönetimi algoritmalar�
 
 ![nav2_gitmesi](https://github.com/user-attachments/assets/ca358b5a-0905-485b-ac6b-7a90e281a004)
 
-### traffic-editor uygulamasını indiriyoruz ve https://www.youtube.com/watch?v=V-pzesxVJoA eğitim videosuna göre oluşturduğumuz haritayı uygulamada açıyoruz
-haritayı png formatına açabilirsiniz ros2 ile kaydettiğiniz mapin formatı png formatında olmayabilir!
 
-haritayı açtıktan sonra video eğitim ile haritanızın trafik yönetimi oluşturun
+# Traffic Editor 🚦  
 
-haritayı kaydettikten sonra .buildin.yaml dosyanın içerisinde png nin konumuna dikkat edin yaml ile aynı konumda olması gerkiyor
+## **Traffic Editor Nedir?** 🗺️  
+**Traffic Editor**, **Open-RMF (Open Robotics Middleware Framework)** ekosistemi içinde kullanılan bir araçtır. Bina içi haritaları ve robot trafiğini yönetmek için geliştirilmiştir. Kullanıcıların robotların hareket edebileceği haritaları oluşturmalarına, düzenlemelerine ve simülasyonlara entegre etmelerine olanak tanır.  
+
+## **Özellikler** ✅  
+
+- **Harita ve Kat Planı Düzenleme** 🏢  
+  - Robotların hareket edebileceği alanları belirlemek için bina haritaları oluşturur.  
+  - Kat planlarını düzenleyerek geçiş yolları, engeller ve odalar eklenebilir.  
+
+- **Şeritler ve Geçiş Noktaları** 🔄  
+  - Robotların takip etmesi gereken yolları (lane) belirler.  
+  - Kavşaklar ve yön değişim noktaları tanımlanabilir.  
+
+- **Filo Trafik Yönetimi** 🚦  
+  - Çoklu robot sistemlerinde trafik yönetimini sağlar.  
+  - Çakışmaları önlemek için şeritler arasında önceliklendirme yapar.  
+
+- **Simülasyon ve Open-RMF Uyumluluğu** 🛠  
+  - Open-RMF ile entegre çalışarak gerçek robot sistemleriyle uyumlu senaryolar oluşturur.  
+  - Robotların hareketlerini simüle etmek ve test etmek için kullanılabilir.  
+
+- **Kolay Kullanım ve Açık Kaynak** 🌍  
+  - Kullanıcı dostu arayüzü ile harita düzenlemeyi kolaylaştırır.  
+  - Açık kaynak olduğu için geliştiriciler tarafından özelleştirilebilir.  
+
+## **Çalışma Mantığı** ⚙  
+- **Traffic Editor**, haritaları düzenlemek ve robotların kullanacağı yolları belirlemek için kullanılır.  
+- **Şeritler (lanes)** ve **düğümler (nodes)** eklenerek robotların izlemesi gereken yollar tanımlanır.  
+- Harita **Open-RMF’ye aktarılır** ve filo yönetim sistemi tarafından kullanılır.  
+
+## **Kullanım Senaryoları** 🎯  
+✅ Kapalı alanlarda robotların takip edeceği yolları belirlemek.  
+✅ Çoklu robot sistemlerinde çarpışmaları önlemek ve trafiği yönetmek.  
+✅ Open-RMF tabanlı filo yönetimi sistemlerinde bina içi haritaları oluşturmak.  
+## traffic-editor uygulamasını indiriyoruz ve https://www.youtube.com/watch?v=V-pzesxVJoA eğitim videosuna göre oluşturduğumuz haritayı uygulamada açıyoruz
+- haritayı png formatına açabilirsiniz ros2 ile kaydettiğiniz mapin formatı png formatında olmayabilir!
+- haritayı açtıktan sonra video eğitim ile haritanızın trafik yönetimi oluşturun
+- haritayı kaydettikten sonra .buildin.yaml dosyanın içerisinde png nin konumuna dikkat edin yaml ile aynı konumda olması gerkiyor
 
 
 # Free Fleet 🚀
