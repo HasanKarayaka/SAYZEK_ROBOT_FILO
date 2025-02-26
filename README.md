@@ -294,7 +294,7 @@ Bu yöntem, çok robotlu sistemlerin koordinasyonu, filo yönetimi algoritmalar�
 - haritayı kaydettikten sonra .buildin.yaml dosyanın içerisinde png nin konumuna dikkat edin yaml ile aynı konumda olması gerkiyor
 
 
-# Free Fleet 🚀
+# **Free Fleet** 🚀
 
 ## **Free Fleet Nedir?** 🔍  
 **Free Fleet**, **Open-RMF (Open Robotics Middleware Framework)** ekosistemi içinde bulunan açık kaynaklı bir filo yönetim sistemidir. Robot filolarını merkezi bir sistem üzerinden yönetmek, görevleri koordine etmek ve farklı üreticilere ait robotları birlikte çalıştırmak için kullanılır.  
