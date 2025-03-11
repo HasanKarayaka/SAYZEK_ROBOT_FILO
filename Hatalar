@@ -1,3 +1,8 @@
 : Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
 Eğer buna benzer bir hatayı nav2 ve tb3 kurduktan sonra alıyorsanız, gazebo yüklenmiyorsa hatanın nedeni 
 ". /usr/share/gazebo/setup.bash"  komutu kullanılarak çözülmüştür
+
+Eğer colcon build yaparken bilgisayarınız dnuyorsa ve kapatmak zorunda kalıyorsanız.
+export MAKEFLAGS="-j 1"
+colcon build --executor sequential
+
