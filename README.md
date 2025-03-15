@@ -372,8 +372,7 @@ Artık bu komutu da çalıştırdığınızda robotun rviz ve gazeboda istediği
 
 # ÇOKLU ROBOTLARA MANUAL GÖREV ATAMA
 
-![Uploading image.png…]()
-
+![Image](https://github.com/user-attachments/assets/1443adaa-af30-4251-9719-c290abd33209)
 
 
 
