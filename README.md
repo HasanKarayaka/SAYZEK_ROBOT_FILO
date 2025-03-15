@@ -368,7 +368,9 @@ robotun isim tanımlamalarını görev vermek için kullancağız bu yüzden bur
 Artık bu komutu da çalıştırdığınızda robotun rviz ve gazeboda istediğiniz konuma otonom haraketini izleyebilirsiniz.**
 ![Screenshot from 2025-02-11 21-22-11](https://github.com/user-attachments/assets/cba85741-0afc-446c-a726-2c004ba01fe1)
 
+# MULTİ ROBOT UYGULAMASI MANUAL GÖREV VERME
 
+file:///home/komando/Downloads/Screencastfrom03-14-2025105951AM-ezgif.com-video-to-gif-converter.gif
 
 
 
