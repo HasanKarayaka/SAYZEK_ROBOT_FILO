@@ -370,8 +370,9 @@ Artık bu komutu da çalıştırdığınızda robotun rviz ve gazeboda istediği
 
 
 
+# ÇOKLU ROBOTLARA MANUAL GÖREV ATAMA
 
-
+file:///home/komando/Downloads/Screencastfrom03-14-2025105951AM-ezgif.com-video-to-gif-converter.gif
 
 
 
