@@ -326,7 +326,7 @@ robotun isim tanımlamalarını görev vermek için kullancağız bu yüzden bur
 
 **kodu dikatli incelediğinizde new robot ile fleet name isimlendirmelerinin nasıl atandığını fark ediyorsunnuz, deneme yazan yer kefi olarak yazılabilir. 
 Artık bu komutu da çalıştırdığınızda robotun rviz ve gazeboda istediğiniz konuma otonom haraketini izleyebilirsiniz.**
-file:///home/komando/Videos/Screencasts/Screencast%20from%2003-20-2025%2011:18:37%20AM.webm
+(https://github.com/user-attachments/assets/4c6fb214-0b3c-453f-825a-ac24dc604d3b)
 
 
 
