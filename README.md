@@ -300,7 +300,8 @@ Free Fleet, klasik bir **Server - Client** mimarisi ile çalışır:
 - ROS 1 veya ROS 2 ile uyumlu çalışabilir.
 
 
-linketi adrese giderek kurulum yapabilirsiniz
+# KURULUM İÇİN İZLEMENİZ GEREKEN ADIMLAR
+
 - https://github.com/open-rmf/free_fleet/tree/legacy?tab=readme-ov-file
 
 
