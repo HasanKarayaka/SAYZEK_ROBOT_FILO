@@ -251,10 +251,10 @@ Bu yöntem, çok robotlu sistemlerin koordinasyonu, filo yönetimi algoritmalar�
 
 ![nav2_gitmesi](https://github.com/user-attachments/assets/ca358b5a-0905-485b-ac6b-7a90e281a004)
 
+https://github.com/user-attachments/assets/73829583-634e-4d49-97fc-b2254f80ad1f
 
 
-
-# **Free Fleet** 🚀
+# **Free Fleet** 
 
 ## **Free Fleet Nedir?**   
 **Free Fleet**, **Open-RMF (Open Robotics Middleware Framework)** ekosistemi içinde bulunan açık kaynaklı bir filo yönetim sistemidir. Robot filolarını merkezi bir sistem üzerinden yönetmek, görevleri koordine etmek ve farklı üreticilere ait robotları birlikte çalıştırmak için kullanılır.  
@@ -281,10 +281,23 @@ Bu yöntem, çok robotlu sistemlerin koordinasyonu, filo yönetimi algoritmalar�
 6. **Özel Protokoller ve Haberleşme**   
    - WebSocket, MQTT gibi haberleşme yöntemlerini destekleyebilir.  
 
-## **Çalışma Mantığı** ⚙  
-- Free Fleet, **robot istemcileri (robot clients)** ve **filo sunucusu (fleet server)** olmak üzere iki ana bileşenden oluşur.  
-- **Filo sunucusu**, Open-RMF ile bağlantılıdır ve robotlara görev atar.  
-- **Robot istemcileri**, filo sunucusundan gelen komutları alarak kendi iç motorlarına iletir.  
+## Server - Client Yapısı
+
+Free Fleet, klasik bir **Server - Client** mimarisi ile çalışır:
+
+### Server (`free_fleet_server`)
+- Merkezi filo yöneticisidir.
+- Robotlara hangi görevleri ne zaman yapacaklarını belirler.
+- Kullanıcıdan gelen görevleri (örneğin, "robot A’yı noktadan noktaya gönder") robotlara iletir.
+- ROS 2 üzerinden görevleri yayınlar (`/destination_requests` gibi).
+- Genellikle güçlü bir makinede, merkezi sunucuda çalışır.
+
+### Client (`free_fleet_client`)
+- Robot üzerinde çalışır.
+- Free Fleet Server’dan gelen görevleri alır.
+- Robotun iç kontrol sistemine bu görevleri iletir (örneğin `nav2`, `slam_toolbox` gibi sistemlerle entegre olabilir).
+- Robotun anlık konumu ve durumu gibi verileri Server'a geri yollar.
+- ROS 1 veya ROS 2 ile uyumlu çalışabilir.
 
 
 linketi adrese giderek kurulum yapabilirsiniz
@@ -331,7 +344,7 @@ https://github.com/user-attachments/assets/4c6fb214-0b3c-453f-825a-ac24dc604d3b
 
 
 
-# Traffic Editor 🚦  
+# Traffic Editor   
 
 ## **Traffic Editor Nedir?**  
 **Traffic Editor**, **Open-RMF (Open Robotics Middleware Framework)** ekosistemi içinde kullanılan bir araçtır. Bina içi haritaları ve robot trafiğini yönetmek için geliştirilmiştir. Kullanıcıların robotların hareket edebileceği haritaları oluşturmalarına, düzenlemelerine ve simülasyonlara entegre etmelerine olanak tanır.  
@@ -372,9 +385,12 @@ https://github.com/user-attachments/assets/4c6fb214-0b3c-453f-825a-ac24dc604d3b
 - haritayı açtıktan sonra video eğitim ile haritanızın trafik yönetimi oluşturun
 - haritayı kaydettikten sonra .buildin.yaml dosyanın içerisinde png nin konumuna dikkat edin yaml ile aynı konumda olması gerkiyor
 
-# ÇOKLU ROBOTLARA MANUAL GÖREV ATAMA
+# ÇOKLU ROBOTLARA MANUAL GÖREV ATAMA(Free Fleet algoritmasını kullanmadan NAV2 ile göreve gönderme)
 
 https://github.com/user-attachments/assets/73829583-634e-4d49-97fc-b2254f80ad1f
+
+
+
 
 
 
