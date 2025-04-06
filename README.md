@@ -251,6 +251,7 @@ Bu yöntem, çok robotlu sistemlerin koordinasyonu, filo yönetimi algoritmalar�
 
 ![nav2_gitmesi](https://github.com/user-attachments/assets/ca358b5a-0905-485b-ac6b-7a90e281a004)
 
+# ÇOKLU ROBOTLARA MANUAL GÖREV ATAMA(Free Fleet algoritmasını kullanmadan NAV2 ile göreve gönderme)
 https://github.com/user-attachments/assets/73829583-634e-4d49-97fc-b2254f80ad1f
 
 
@@ -386,9 +387,8 @@ https://github.com/user-attachments/assets/4c6fb214-0b3c-453f-825a-ac24dc604d3b
 - haritayı açtıktan sonra video eğitim ile haritanızın trafik yönetimi oluşturun
 - haritayı kaydettikten sonra .buildin.yaml dosyanın içerisinde png nin konumuna dikkat edin yaml ile aynı konumda olması gerkiyor
 
-# ÇOKLU ROBOTLARA MANUAL GÖREV ATAMA(Free Fleet algoritmasını kullanmadan NAV2 ile göreve gönderme)
 
-https://github.com/user-attachments/assets/73829583-634e-4d49-97fc-b2254f80ad1f
+
 
 
 
