@@ -252,7 +252,7 @@ Bu yöntem, çok robotlu sistemlerin koordinasyonu, filo yönetimi algoritmalar�
 ![nav2_gitmesi](https://github.com/user-attachments/assets/ca358b5a-0905-485b-ac6b-7a90e281a004)
 
 # ÇOKLU ROBOTLARA MANUAL GÖREV ATAMA(Free Fleet algoritmasını kullanmadan NAV2 ile göreve gönderme)
-//https://github.com/user-attachments/assets/73829583-634e-4d49-97fc-b2254f80ad1f
+
 https://github.com/user-attachments/assets/78ec1b5f-31ac-4109-8790-1e036bbc75c7
 
 
