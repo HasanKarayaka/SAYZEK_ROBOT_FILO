@@ -388,7 +388,7 @@ Artık bu komutu da çalıştırdığınızda robotun rviz ve gazeboda istediği
 ## traffic-editor uygulamasını indiriyoruz ve https://www.youtube.com/watch?v=V-pzesxVJoA eğitim videosuna göre oluşturduğumuz haritayı uygulamada açıyoruz
 - haritayı png formatına açabilirsiniz ros2 ile kaydettiğiniz mapin formatı png formatında olmayabilir!
 - haritayı açtıktan sonra video eğitim ile haritanızın trafik yönetimi oluşturun
-- haritayı kaydettikten sonra .buildin.yaml dosyanın içerisinde png nin konumuna dikkat edin yaml ile aynı konumda olması gerkiyor
+- haritayı kaydettikten sonra .buildin.yaml dosyanın içerisinde png nin konumuna dikkat edin yaml ile aynı konumda olması gerkiyor.
 
 
 
